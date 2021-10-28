@@ -1,11 +1,14 @@
-public class Empregado {
-    public class Empregado extends Pessoa {    // subclasse 
+public class Empregado extends Pessoa {    // subclasse 
     
-        private int codigoSetor;
-        private double salarioBase;
-        private double imposto;
+    private int codigoSetor;
+    private double salarioBase;
+    private double imposto;
     
-        //fazer os métodos get e set
+    //fazer os métodos get e set
+
+    public double calculaSalario(){
+        double salarioTotal=0;
+        salarioTotal=this.salarioBase-this.imposto;
+        return salarioTotal;
     }
-    
 }
